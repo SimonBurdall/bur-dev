@@ -43,7 +43,11 @@ ROOT_URLCONF = "bur_dev.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            os.path.join(BASE_DIR, 'templates'),
+            os.path.join(BASE_DIR, 'main'),
+            os.path.join(BASE_DIR, 'main/templates')
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
