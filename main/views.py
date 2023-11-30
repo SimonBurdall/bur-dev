@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
+from .models import project, project_language, project_language_mapping
+
 def index(request):
 
     context = {
