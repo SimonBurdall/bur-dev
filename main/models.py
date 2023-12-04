@@ -4,11 +4,11 @@ class project(models.Model):
     name = models.CharField(max_length=100)
     short_description = models.CharField(max_length=50)
     description = models.TextField()
-    grid_image = models.ImageField(upload_to='project_images/')
-    hero_image = models.ImageField()
-    project_link = models.URLField()
-    github_link = models.URLField()
-    blog_post = models.TextField()
+    grid_image = models.ImageField(upload_to='project_images/',null=True,blank=True)
+    hero_image = models.ImageField(null=True,blank=True)
+    project_link = models.URLField(null=True,blank=True)
+    github_link = models.URLField(null=True,blank=True)
+    blog_post = models.TextField(null=True,blank=True)
 
     def __str__(self):
         return self.name
