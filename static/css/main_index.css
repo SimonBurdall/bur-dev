@@ -1,0 +1,129 @@
+/*-- Modern Reset CSS --*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/*-- main_index --*/
+:root {
+  --text-50: #eff3f5;
+  --text-100: #e0e7eb;
+  --text-200: #c1d0d7;
+  --text-300: #a2b8c3;
+  --text-400: #83a0af;
+  --text-500: #63899c;
+  --text-600: #506d7c;
+  --text-700: #3c525d;
+  --text-800: #28373e;
+  --text-900: #141b1f;
+  --text-950: #0a0e10;
+
+  --background-50: #f0f4f5;
+  --background-100: #e1e8ea;
+  --background-200: #c2d2d6;
+  --background-300: #a4bbc1;
+  --background-400: #86a5ac;
+  --background-500: #678e98;
+  --background-600: #537279;
+  --background-700: #3e555b;
+  --background-800: #29393d;
+  --background-900: #151c1e;
+  --background-950: #0a0e0f;
+
+  --primary-50: #f0f4f5;
+  --primary-100: #e0e8eb;
+  --primary-200: #c1d2d7;
+  --primary-300: #a2bbc3;
+  --primary-400: #84a4ae;
+  --primary-500: #658e9a;
+  --primary-600: #51717b;
+  --primary-700: #3c555d;
+  --primary-800: #28393e;
+  --primary-900: #141c1f;
+  --primary-950: #0a0e0f;
+
+  --secondary-50: #f0f1f5;
+  --secondary-100: #e0e2eb;
+  --secondary-200: #c2c6d6;
+  --secondary-300: #a3a9c2;
+  --secondary-400: #858dad;
+  --secondary-500: #667099;
+  --secondary-600: #525a7a;
+  --secondary-700: #3d435c;
+  --secondary-800: #292d3d;
+  --secondary-900: #14161f;
+  --secondary-950: #0a0b0f;
+
+  --accent-50: #f0f0f5;
+  --accent-100: #e0e1eb;
+  --accent-200: #c2c4d6;
+  --accent-300: #a3a6c2;
+  --accent-400: #8588ad;
+  --accent-500: #666a99;
+  --accent-600: #52557a;
+  --accent-700: #3d405c;
+  --accent-800: #292b3d;
+  --accent-900: #14151f;
+  --accent-950: #0a0b0f;
+}
+
+body {
+  color: var(--text-50);
+  background-color: var(--background-950);
+}
